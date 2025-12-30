@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L6V6GP0BNC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L6V6GP0BNC');
+    </script>
+
+    <!-- Basic Meta -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edem K. Boahen, Ph.D. - Research Portfolio</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Edem Kofi Konadu Boahen, PhD Candidate in Mathematics at Michigan State University. Research in compressive sensing, high-dimensional probability, and large-scale numerical algorithms.">
+    <meta name="keywords" content="Edem Boahen, mathematics researcher, compressive sensing, high-dimensional probability, Michigan State University, PhD candidate, numerical algorithms, LLNL, research portfolio, data science, machine learning, graph algorithms">
+    <meta name="author" content="Edem Kofi Konadu Boahen">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Edem K. Boahen, Ph.D. - Research Portfolio">
+    <meta property="og:description" content="PhD Candidate in Mathematics at Michigan State University specializing in compressive sensing, high-dimensional probability, and large-scale numerical algorithms. Former LLNL intern.">
+    <meta property="og:image" content="https://yourusername.github.io/images/My_photo.jpg">
+    <meta property="og:url" content="https://yourusername.github.io">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Edem Boahen Research Portfolio">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Edem K. Boahen, Ph.D. - Research Portfolio">
+    <meta name="twitter:description" content="Mathematics researcher specializing in compressive sensing and high-performance computing at Michigan State University.">
+    <meta name="twitter:image" content="https://yourusername.github.io/images/My_photo.jpg">
+    
+    <!-- Google Search Console Verification (Add your code when you get it) -->
+    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE_HERE" /> -->
+    
+    <title>Edem K. Boahen, Ph.D. - Mathematics Research Portfolio | Michigan State University</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Structured Data for Google (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://yourusername.github.io/#person",
+        "name": "Edem Kofi Konadu Boahen",
+        "url": "https://yourusername.github.io",
+        "image": "https://yourusername.github.io/images/My_photo.jpg",
+        "jobTitle": "PhD Candidate in Mathematics",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Michigan State University",
+            "url": "https://math.msu.edu"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Michigan State University",
+                "url": "https://msu.edu"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "African Institute for Mathematical Sciences",
+                "url": "https://aims.ac.za"
+            },
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Ghana",
+                "url": "https://ug.edu.gh"
+            }
+        ],
+        "sameAs": [
+            "https://linkedin.com/in/edem-boahen-489710177"
+        ],
+        "knowsAbout": [
+            "Compressive Sensing",
+            "High-Dimensional Probability",
+            "Numerical Linear Algebra",
+            "Graph Algorithms",
+            "High-Performance Computing",
+            "Data Science",
+            "Machine Learning",
+            "Optimization"
+        ],
+        "description": "PhD Candidate in Mathematics at Michigan State University specializing in compressive sensing, high-dimensional probability, and large-scale numerical algorithms.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "East Lansing",
+            "addressRegion": "MI",
+            "addressCountry": "USA"
+        },
+        "email": "boahened@msu.edu",
+        "telephone": "+1-517-980-6951"
+    }
+    </script>
+    
     <style>
         /* === Base Styles & Variables === */
         :root {
@@ -424,7 +516,7 @@
         }
     </style>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/Person">
     <!-- Navigation -->
     <header>
         <div class="container">
@@ -451,15 +543,17 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Edem Kofi Konadu Boahen, Ph.D.</h1>
-                    <span class="title">PhD Candidate in Mathematics | Michigan State University</span>
+                    <h1 itemprop="name">Edem Kofi Konadu Boahen, Ph.D.</h1>
+                    <span class="title" itemprop="jobTitle">PhD Candidate in Mathematics | Michigan State University</span>
                     <p>Passionate researcher specializing in <strong>compressive sensing, high-dimensional probability, and large-scale numerical algorithms</strong>. Proven track record in high-performance computing and collaborative projects with national labs.</p>
                     
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> East Lansing, MI, USA</p>
-                        <p><i class="fas fa-phone"></i> +1 (517) 980-6951</p>
-                        <p><i class="fas fa-envelope"></i> boahened@msu.edu</p>
-                        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/edem-boahen-489710177" target="_blank">linkedin.com/in/edem-boahen-489710177</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                            <span itemprop="addressLocality">East Lansing</span>, <span itemprop="addressRegion">MI</span>, <span itemprop="addressCountry">USA</span>
+                        </span></p>
+                        <p><i class="fas fa-phone"></i> <span itemprop="telephone">+1 (517) 980-6951</span></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:boahened@msu.edu" itemprop="email">boahened@msu.edu</a></p>
+                        <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/edem-boahen-489710177" target="_blank" itemprop="sameAs">linkedin.com/in/edem-boahen-489710177</a></p>
                     </div>
 
                     <div class="hero-btns">
@@ -471,7 +565,7 @@
                 </div>
                 
                 <div class="profile-img">
-                    <img src="images/My_photo.jpg" alt="Edem Kofi Konadu Boahen - PhD Candidate in Mathematics at Michigan State University">
+                    <img src="images/My_photo.jpg" alt="Edem Kofi Konadu Boahen - PhD Candidate in Mathematics at Michigan State University" itemprop="image">
                 </div>
             </div>
         </div>
